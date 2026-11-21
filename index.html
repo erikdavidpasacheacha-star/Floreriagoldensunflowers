@@ -31,8 +31,14 @@
     <header class="cabecera">
         <div class="container header-flex">
             <a class="header-logo" href="index.html">
-                <img src="assets/img/logo 1.jpeg" alt="Florería Goldensunflowers, ir al inicio" width="150">
+                <img src="assets/img/logo nuevo.png" alt="Florería Goldensunflowers, ir al inicio" width="150">
             </a>
+
+            <!-- Botón hamburguesa (solo se ve en tablet y celular) -->
+            <button type="button" class="header-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
             <nav class="header-menu" aria-label="Principal">
                 <a href="index.html" aria-current="page">Inicio</a>
                 <a href="nosotros.html">Nosotros</a>
@@ -57,8 +63,6 @@
             </div>
         </section>
 
-
-
         <!-- Banner (imagen) -->
         <section class="baner">
             <img src="assets/img/baner.jpeg" alt="Banner de flores">
@@ -71,7 +75,6 @@
                 <a class="boton" href="nosotros.html">Conocer más</a>
             </div>
         </section>
-     
 
         <!-- Servicios -->
         <section class="servicios" id="arreglos">
@@ -165,9 +168,15 @@
                     </div>
                 </div>
                 <div class="promociones-video">
-                    <!-- CAMBIA el código EiXBmgBmvJM por el de tu video de YouTube -->
-                    <iframe class="video-fluid" src="https://www.youtube.com/embed/EiXBmgBmvJM" title="Video de Florería Goldensunflowers" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+                    <!-- Para insertar un video de YouTube el enlace debe ser de tipo "embed" -->
+                    <iframe class="video-fluid"
+                 src="https://www.youtube.com/embed/PJlpfvgX_Gw"
+                 title="Video de Florería Goldensunflowers"
+                 loading="lazy"
+                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                 referrerpolicy="strict-origin-when-cross-origin"
+                 allowfullscreen></iframe>
+                      </div>
             </div>
         </section>
     </main>
@@ -191,6 +200,9 @@
     </footer>
 
     <a href="#" class="scroll-up" aria-label="Volver arriba"><i class="fa-solid fa-angle-up" aria-hidden="true"></i></a>
+
+    <!-- Enlaza el HTML con el código JavaScript del menú hamburguesa -->
+    <script src="assets/main.js"></script>
 </body>
 
 </html>
