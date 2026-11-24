@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y pedidos | Goldensunflowers</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/logo nuevo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="topbar">
+        <div class="container topbar-flex">
+            <p><i class="fa-solid fa-phone"></i> +51 917-620-646</p>
+
+            <div class="topbar-redes">
+                <a href="https://www.facebook.com/share/14tuyGa63AQ/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/floreriagoldensunflowers?psln=cGxybmxtMDFwNWkw" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/51917620646" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENCABEZADO -->
+    <header class="cabecera">
+        <div class="container header-flex">
+
+            <a class="header-logo" href="index.html">
+                <img src="assets/img/logo nuevo.png" alt="Goldensunflowers">
+            </a>
+
+            <button class="header-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="header-menu">
+                <a href="index.html">Inicio</a>
+                <a href="galeria.html">Galería</a>
+                <a href="ocasiones.html">Ocasiones</a>
+                <a href="promociones.html">Promociones</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html" class="activo">Contacto</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PORTADA -->
+        <section class="encabezado-pagina contacto-portada">
+            <div class="container">
+                <p class="etiqueta">GOLDENSUNFLOWERS · ATENCIÓN PERSONALIZADA</p>
+                <h1>Un detalle comienza aquí</h1>
+                <p>
+                    Estamos listos para ayudarte a crear un regalo especial.
+                    Cuéntanos tu idea y hagámosla florecer.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACTO Y FORMULARIO -->
+        <section class="contacto">
+            <div class="container">
+
+                <div class="titulos-seccion">
+                    <p class="etiqueta">ESTAMOS PARA TI</p>
+                    <h2>Hagamos especial tu momento</h2>
+                    <p>
+                        Completa el formulario y envíanos tu solicitud directamente por WhatsApp.
+                    </p>
+                </div>
+
+                <div class="contacto-grid">
+
+                    <!-- FORMULARIO -->
+                    <div class="formulario-contenedor">
+
+                        <div class="formulario-titulo">
+                            <span class="formulario-icono">
+                                <i class="fa-solid fa-seedling"></i>
+                            </span>
+
+                            <div>
+                                <h3>Personaliza tu pedido</h3>
+                                <p>Cuéntanos cómo podemos ayudarte.</p>
+                            </div>
+                        </div>
+
+                        <form id="formPedido">
+
+                            <!-- DATOS PERSONALES -->
+                            <div class="formulario-seccion">
+                                <h4><i class="fa-regular fa-user"></i> Tus datos</h4>
+                                <p>Necesitamos esta información para comunicarnos contigo.</p>
+                            </div>
+
+                            <div class="formulario-campo">
+                                <label for="nombre">Nombre completo *</label>
+                                <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+                            </div>
+
+                            <div class="formulario-campo">
+                                <label for="telefono">Número de teléfono *</label>
+                                <input type="tel" id="telefono" placeholder="Ej. 987654321" required>
+                            </div>
+
+                            <!-- DETALLES DEL PEDIDO -->
+                            <div class="formulario-seccion">
+                                <h4><i class="fa-solid fa-gift"></i> Tu arreglo floral</h4>
+                                <p>Indícanos qué diseño deseas y cuándo lo necesitas.</p>
+                            </div>
+
+                            <div class="formulario-campo">
+                                <label for="producto">Producto que deseas *</label>
+                                <input type="text" id="producto" placeholder="Ej. Ramo de rosas" required>
+                            </div>
+
+                            <div class="formulario-campo">
+                                <label for="fecha">Fecha de entrega *</label>
+                                <input type="date" id="fecha" required>
+                            </div>
+
+                            <!-- DATOS DE ENTREGA -->
+                            <div class="formulario-seccion">
+                                <h4><i class="fa-solid fa-truck-fast"></i> Datos de entrega</h4>
+                                <p>Realizamos entregas exclusivamente a domicilio.</p>
+                            </div>
+
+                            <div class="formulario-campo">
+                                <label for="distrito">Distrito de entrega *</label>
+                                <input type="text" id="distrito" placeholder="Ej. San Isidro" required>
+                            </div>
+
+                            <div class="formulario-campo">
+                                <label for="direccion">Dirección completa de delivery *</label>
+                                <textarea id="direccion" rows="3" placeholder="Avenida, calle, número, referencia..." required></textarea>
+                            </div>
+
+                            <!-- PERSONALIZACIÓN -->
+                            <div class="formulario-seccion">
+                                <h4><i class="fa-regular fa-heart"></i> Personaliza tu detalle</h4>
+                                <p>Agrega un mensaje o alguna indicación especial.</p>
+                            </div>
+
+                            <div class="formulario-campo">
+                                <label for="mensaje">Mensaje para la tarjeta</label>
+                                <textarea id="mensaje" rows="3" placeholder="Escribe aquí tu dedicatoria..."></textarea>
+                            </div>
+
+                            <div class="formulario-campo">
+                                <label for="detalles">Detalles adicionales</label>
+                                <textarea id="detalles" rows="3" placeholder="Colores, flores, preferencias u otra indicación..."></textarea>
+                            </div>
+
+                            <!-- AVISO -->
+                            <div class="formulario-aviso">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <p>
+                                    El costo del delivery se calcula por separado según el distrito.
+                                    La fecha y disponibilidad del arreglo serán confirmadas por nuestro equipo.
+                                </p>
+                            </div>
+
+                            <button type="submit" class="form-submit">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Enviar solicitud por WhatsApp
+                            </button>
+
+                            <p class="formulario-pie">
+                                Al presionar el botón se abrirá WhatsApp con los datos de tu solicitud.
+                                Deberás enviar el mensaje desde allí.
+                            </p>
+
+                        </form>
+                    </div>
+
+                    <!-- INFORMACIÓN LATERAL -->
+                    <aside class="contacto-info">
+
+                        <div class="contacto-info-cabecera">
+                            <p class="etiqueta">GOLDENSUNFLOWERS</p>
+                            <h3>Estamos aquí para ti</h3>
+                            <p>
+                                Cada detalle tiene una historia.
+                                Permítenos ayudarte a contar la tuya.
+                            </p>
+                        </div>
+
+                        <div class="contacto-info-bloque">
+                            <span class="contacto-info-icono">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </span>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/51917620646" target="_blank">
+                                    +51 917-620-646
+                                </a>
+                                <p>Escríbenos para realizar tu pedido.</p>
+                            </div>
+                        </div>
+
+                        <div class="contacto-info-bloque">
+                            <span class="contacto-info-icono">
+                                <i class="fa-regular fa-envelope"></i>
+                            </span>
+                            <div>
+                                <h4>Correo electrónico</h4>
+                                <a href="mailto:info@floreriagoldensunflowers.com.pe">
+                                    info@floreriagoldensunflowers.com.pe
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contacto-info-bloque">
+                            <span class="contacto-info-icono">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>San Isidro, Lima, Perú.</p>
+                            </div>
+                        </div>
+
+                        <div class="contacto-info-bloque">
+                            <span class="contacto-info-icono">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </span>
+                            <div>
+                                <h4>Delivery a domicilio</h4>
+                                <p>Entregamos directamente en la dirección indicada.</p>
+                                <p>El costo se calcula según el distrito.</p>
+                            </div>
+                        </div>
+
+                        <div class="contacto-info-bloque">
+                            <span class="contacto-info-icono">
+                                <i class="fa-solid fa-house"></i>
+                            </span>
+                            <div>
+                                <h4>Modalidad de entrega</h4>
+                                <p>Solo delivery. No contamos con recojo en tienda.</p>
+                            </div>
+                        </div>
+
+                        <div class="contacto-redes">
+                            <h4>Síguenos en nuestras redes</h4>
+
+                            <div>
+                                <a href="https://www.facebook.com/share/14tuyGa63AQ/" target="_blank">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+
+                                <a href="https://www.instagram.com/floreriagoldensunflowers?psln=cGxybmxtMDFwNWkw" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                                <a href="https://wa.me/51917620646" target="_blank">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="piedepagina">
+        <div class="container footer-flex">
+
+            <div class="footer-logo">
+                <img src="assets/img/logo nuevo.png" alt="Goldensunflowers">
+                <p>Un detalle que florece en emociones.</p>
+            </div>
+
+            <div class="footer-enlaces">
+                <h3>Navegación</h3>
+                <a href="index.html">Inicio</a>
+                <a href="galeria.html">Galería</a>
+                <a href="ocasiones.html">Ocasiones</a>
+                <a href="promociones.html">Promociones</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div class="footer-contacto">
+                <h3>Contacto</h3>
+                <p>+51 917-620-646</p>
+                <p>info@floreriagoldensunflowers.com.pe</p>
+                <p>Delivery a domicilio</p>
+            </div>
+
+        </div>
+
+        <div class="footer-copy">
+            <p>&copy; 2026 Goldensunflowers. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/51917620646" class="whatsapp-flotante" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="#" class="scroll-up" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

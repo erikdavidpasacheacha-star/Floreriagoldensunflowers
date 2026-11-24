@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | Goldensunflowers</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/logo nuevo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="topbar">
+        <div class="container topbar-flex">
+            <p><i class="fa-solid fa-phone"></i> +51 917-620-646</p>
+            <div class="topbar-redes">
+                <a href="https://www.facebook.com/share/14tuyGa63AQ/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/floreriagoldensunflowers?psln=cGxybmxtMDFwNWkw" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/51917620646" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENCABEZADO -->
+    <header class="cabecera">
+        <div class="container header-flex">
+            <a class="header-logo" href="index.html">
+                <img src="assets/img/logo nuevo.png" alt="Goldensunflowers">
+            </a>
+
+            <button class="header-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="header-menu">
+                <a href="index.html">Inicio</a>
+                <a href="galeria.html" class="activo">Galería</a>
+                <a href="ocasiones.html">Ocasiones</a>
+                <a href="promociones.html">Promociones</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PORTADA DE GALERÍA -->
+        <section class="encabezado-pagina galeria-portada">
+            <div class="container">
+                <p class="etiqueta">GOLDENSUNFLOWERS · COLECCIÓN FLORAL</p>
+                <h1>El arte de regalar emociones</h1>
+                <p>
+                    Descubre nuestra colección de arreglos florales,
+                    creados para transformar cada momento en un recuerdo especial.
+                </p>
+                <a href="#catalogo" class="boton">Explorar colección</a>
+            </div>
+        </section>
+
+        <!-- CATÁLOGO -->
+        <section class="galeria" id="catalogo">
+            <div class="container">
+
+                <div class="titulos-seccion">
+                    <p class="etiqueta">NUESTROS DISEÑOS</p>
+                    <h2>Una flor, mil emociones</h2>
+                    <p class="galeria-introduccion">
+                        Encuentra el arreglo ideal y sorprende con un detalle inolvidable.
+                    </p>
+                </div>
+
+                <!-- FILTROS -->
+                <div class="filtros-galeria">
+                    <button class="filtro active" data-categoria="todos">Todos</button>
+                    <button class="filtro" data-categoria="ramos">Ramos</button>
+                    <button class="filtro" data-categoria="boxes">Boxes</button>
+                    <button class="filtro" data-categoria="especiales">Especiales</button>
+                    <button class="filtro" data-categoria="funebres">Fúnebres</button>
+                </div>
+
+                <!-- PRODUCTOS -->
+                <div class="productos-grid">
+
+                    <article class="producto" data-categoria="ramos">
+                        <div class="producto-imagen">
+                            <img src="assets/img/ramo de rosas.jpeg" alt="Ramo de rosas">
+                            <span class="producto-etiqueta">MÁS ELEGIDO</span>
+                        </div>
+                        <div class="producto-info">
+                            <p class="producto-categoria">COLECCIÓN · RAMOS</p>
+                            <h3>Ramo de rosas</h3>
+                            <p class="producto-descripcion">
+                                Elegancia y romanticismo en un detalle floral.
+                            </p>
+                            <div class="producto-pie">
+                                <p class="producto-precio">S/ 80</p>
+                                <a href="contacto.html?producto=Ramo%20de%20rosas" class="boton-producto">
+                                    <i class="fa-brands fa-whatsapp"></i> Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" data-categoria="boxes">
+                        <div class="producto-imagen">
+                            <img src="assets/img/arreglo de girasoles.jpg" alt="Box de girasoles">
+                            <span class="producto-etiqueta">COLECCIÓN FLORAL</span>
+                        </div>
+                        <div class="producto-info">
+                            <p class="producto-categoria">COLECCIÓN · BOXES</p>
+                            <h3>Box de girasoles</h3>
+                            <p class="producto-descripcion">
+                                Un diseño lleno de luz, alegría y calidez.
+                            </p>
+                            <div class="producto-pie">
+                                <p class="producto-precio">S/ 75</p>
+                                <a href="contacto.html?producto=Box%20de%20girasoles" class="boton-producto">
+                                    <i class="fa-brands fa-whatsapp"></i> Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" data-categoria="especiales">
+                        <div class="producto-imagen">
+                            <img src="assets/img/detalle.jpeg" alt="Diseño especial">
+                            <span class="producto-etiqueta">DISEÑO ÚNICO</span>
+                        </div>
+                        <div class="producto-info">
+                            <p class="producto-categoria">COLECCIÓN · ESPECIALES</p>
+                            <h3>Diseño especial</h3>
+                            <p class="producto-descripcion">
+                                Detalles únicos para celebrar momentos especiales.
+                            </p>
+                            <div class="producto-pie">
+                                <p class="producto-precio">S/ 110</p>
+                                <a href="contacto.html?producto=Diseno%20especial" class="boton-producto">
+                                    <i class="fa-brands fa-whatsapp"></i> Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" data-categoria="ramos">
+                        <div class="producto-imagen">
+                            <img src="assets/img/rosas.jpeg" alt="Rosas elegantes">
+                        </div>
+                        <div class="producto-info">
+                            <p class="producto-categoria">COLECCIÓN · RAMOS</p>
+                            <h3>Rosas elegantes</h3>
+                            <p class="producto-descripcion">
+                                Una combinación clásica que nunca pasa de moda.
+                            </p>
+                            <div class="producto-pie">
+                                <p class="producto-precio">S/ 150</p>
+                                <a href="contacto.html?producto=Rosas%20elegantes" class="boton-producto">
+                                    <i class="fa-brands fa-whatsapp"></i> Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" data-categoria="ramos">
+                        <div class="producto-imagen">
+                            <img src="assets/img/girasoles.jpeg" alt="Ramo de girasoles">
+                        </div>
+                        <div class="producto-info">
+                            <p class="producto-categoria">COLECCIÓN · RAMOS</p>
+                            <h3>Ramo de girasoles</h3>
+                            <p class="producto-descripcion">
+                                Flores que transmiten felicidad y optimismo.
+                            </p>
+                            <div class="producto-pie">
+                                <p class="producto-precio">S/ 180</p>
+                                <a href="contacto.html?producto=Girasoles" class="boton-producto">
+                                    <i class="fa-brands fa-whatsapp"></i> Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" data-categoria="ramos">
+                        <div class="producto-imagen">
+                            <img src="assets/img/lirios.jpeg" alt="Ramo de lirios">
+                        </div>
+                        <div class="producto-info">
+                            <p class="producto-categoria">COLECCIÓN · RAMOS</p>
+                            <h3>Ramo de lirios</h3>
+                            <p class="producto-descripcion">
+                                La delicadeza de las flores en un diseño especial.
+                            </p>
+                            <div class="producto-pie">
+                                <p class="producto-precio">S/ 200</p>
+                                <a href="contacto.html?producto=Lirios" class="boton-producto">
+                                    <i class="fa-brands fa-whatsapp"></i> Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- MENSAJE FINAL -->
+                <div class="galeria-final">
+                    <div>
+                        <p class="etiqueta">¿ENCONTRASTE TU FAVORITO?</p>
+                        <h2>Haz que ese momento florezca.</h2>
+                        <p>Escríbenos para consultar disponibilidad y personalizar tu pedido.</p>
+                    </div>
+                    <a href="contacto.html" class="boton">
+                        Solicitar mi arreglo <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <p class="nota-catalogo">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    Delivery a domicilio. El costo se calcula según el distrito.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="piedepagina">
+        <div class="container footer-flex">
+            <div class="footer-logo">
+                <img src="assets/img/logo nuevo.png" alt="Goldensunflowers">
+                <p>Un detalle que florece en emociones.</p>
+            </div>
+
+            <div class="footer-enlaces">
+                <h3>Navegación</h3>
+                <a href="index.html">Inicio</a>
+                <a href="galeria.html">Galería</a>
+                <a href="ocasiones.html">Ocasiones</a>
+                <a href="promociones.html">Promociones</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div class="footer-contacto">
+                <h3>Contacto</h3>
+                <p>+51 917-620-646</p>
+                <p>info@floreriagoldensunflowers.com.pe</p>
+                <p>Delivery a domicilio</p>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+            <p>&copy; 2026 Goldensunflowers. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/51917620646" class="whatsapp-flotante" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="#" class="scroll-up" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

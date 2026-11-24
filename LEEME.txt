@@ -1,0 +1,28 @@
+GOLDENSUNFLOWERS — SITIO WEB MULTIPÁGINA
+
+Archivos:
+- index.html
+- galeria.html
+- ocasiones.html
+- promociones.html
+- nosotros.html
+- contacto.html
+- assets/css/styles.css
+- assets/js/main.js
+
+IMPORTANTE:
+1. Copia estos archivos a la carpeta de tu proyecto en Visual Studio Code.
+2. Conserva tu carpeta assets/img y assets/video originales.
+3. El código utiliza estas imágenes existentes:
+   logo nuevo.png, baner.jpeg, ramo de rosas.jpeg, arreglo de girasoles.jpg,
+   detalle.jpeg, rosas.jpeg, girasoles.jpeg y lirios.jpeg.
+4. Si alguno de esos nombres no coincide exactamente con tu archivo (incluyendo espacios, mayúsculas o extensión), corrige la ruta en el HTML.
+5. En galeria.html reemplaza [coloca tu precio] por el precio real de cada producto.
+6. En promociones.html actualiza [actualizar] con las promociones y precios vigentes.
+7. El formulario de contacto abre WhatsApp al número configurado (+51 917 620 646). El cliente debe pulsar Enviar dentro de WhatsApp.
+8. Delivery solamente; el costo se coordina aparte según el distrito.
+
+Para probar:
+- Abre index.html con Live Server en Visual Studio Code.
+- Comprueba cada enlace del menú.
+- Cuando esté listo, sube los archivos a tu repositorio de GitHub Pages.
